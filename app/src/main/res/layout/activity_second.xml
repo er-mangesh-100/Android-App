@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Successful"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Details are Submitted successfully"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="32dp"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2"
+        android:background="@drawable/table_border">
+        <TableRow
+            android:background="#FFA500">
+            <TextView
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:gravity="center"/>
+            <TextView
+                android:text="Birthday"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:gravity="center"/>
+            <TextView
+                android:text="Email Id"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
